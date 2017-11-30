@@ -1,0 +1,11 @@
+{
+    "name": "rainbow-sprinkles/starter-todo4",
+    "type": "project",
+    "require": {
+        "monolog/monolog": "1.0.*"
+    },
+    "license": "MIT",
+    "require-dev": {
+        "phpunit/phpunit": "^6.4"
+    }
+}
