@@ -2,14 +2,14 @@
 
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Tasks extends XML_Model {
+class Tasks extends REST_Model {
 
         /**
          * Ctor
          */
         public function __construct()
         {
-                parent::__construct(APPPATH . DATAPATH.'tasks.xml', 'id');
+                parent::__construct('http://backend.local', 80);
         }
         
         /**

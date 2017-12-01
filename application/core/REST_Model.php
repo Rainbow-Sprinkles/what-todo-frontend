@@ -76,9 +76,9 @@ class REST_Model extends Memory_Model
             $record->flag = (int) $item->flag;
             $this->_data[$record->id] = $record;
         }
-
+        
         // rebuild the field names
-        $one = aray_values((array) $this->_data);
+        $one = array_values((array) $this->_data);
         $this->_fields = array_keys((array)$one);
         
         // --------------------
