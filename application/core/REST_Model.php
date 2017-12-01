@@ -76,11 +76,12 @@ class REST_Model extends Memory_Model
             $record->flag = (int) $item->flag;
             $this->_data[$record->id] = $record;
         }
-        
-        // rebuild the field names
-        $one = array_values((array) $this->_data);
-        $this->_fields = array_keys((array)$one);
-        
+
+        // rebuild the field names if necessary
+        if(count($this->_data) > 0){
+            $this->_fields = array_keys((array)array_values((array)$this->_data)[0]);
+        }
+
         // --------------------
         // rebuild the keys table
         $this->reindex();
@@ -90,7 +91,7 @@ class REST_Model extends Memory_Model
     function add($record)
     {
         $key = $record->{$this->_keyfield};
-        $retrieved = $this->rest->post('/job/' . $key, $record);
+        $retrieved = $this->rest->post('/job/' . $key, (array)$record);
         $this->load(); // refresh the data from the server in case there are changes in the db
     }
     
