@@ -107,7 +107,7 @@ class REST_Model extends Memory_Model
     function update($record)
     {
         $key = $record->{$this->_keyfield};
-        $retrieved = $this->rest->put('/job/' . $key, $record);
+        $retrieved = $this->rest->put('/job/' . $key, (array)$record);
         $this->load(); // refresh the data from the server in case there are changes in the db
     }
     
