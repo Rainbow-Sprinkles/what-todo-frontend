@@ -1,0 +1,41 @@
+*/config/development
+*/logs/log-*.php
+!*/logs/index.html
+*/cache/*
+!*/cache/index.html
+!*/cache/.htaccess
+
+user_guide_src/build/*
+user_guide_src/cilexer/build/*
+user_guide_src/cilexer/dist/*
+user_guide_src/cilexer/pycilexer.egg-info/*
+
+#codeigniter 3
+application/logs/*
+!application/logs/index.html
+!application/logs/.htaccess
+/vendor/
+/nbproject/private/
+/nbproject/
+
+.metadata
+
+#NetBeans
+/nbproject/
+
+#Mac Additional System Files
+.DS_Store
+
+#Jetbrains IDE
+.idea/
+
+# tmp folder
+/tmp/
+
+#PHP Composer if it's put inside the project
+composer.phar
+composer.exe
+composer.lock
+
+#Tests Reports
+/tests/report
