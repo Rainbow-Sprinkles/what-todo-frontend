@@ -94,3 +94,6 @@ defined('DATAPATH') OR define('DATAPATH', '../data/'); //data file path
  */
 defined('ROLE_GUEST') OR define('ROLE_GUEST', 'Guest');
 defined('ROLE_OWNER') OR define('ROLE_OWNER', 'Owner');
+
+define('REST_SERVER', 'http://backend.local');  // the REST server host
+define('REST_PORT', $_SERVER['SERVER_PORT']);   // the port you are running the server on

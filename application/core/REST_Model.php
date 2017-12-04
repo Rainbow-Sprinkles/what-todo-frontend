@@ -26,12 +26,12 @@ class REST_Model extends Memory_Model
     * @param string $keyfield  Name of the primary key field
     * @param string $entity	Entity name meaningful to the persistence
     */
-    function __construct($rest_server, $rest_port = 80, $keyfield = 'id', $entity = null)
+    function __construct($rest_server, $rest_port = 4711, $keyfield = 'id', $entity = null)
     {
         parent::__construct();
 
         $this->rest_server = $rest_server;
-        $this->rest_port = is_int($rest_port) ? intval($rest_port) : 80;
+        $this->rest_port = is_int($rest_port) ? intval($rest_port) : 4711;
 
         // initialize this model
         $this->initialize();
