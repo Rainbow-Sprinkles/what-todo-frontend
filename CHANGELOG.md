@@ -7,6 +7,9 @@ All notable changes to this project will be documented in this file.
 
 # [latest version none]
 
+## [1.0.0] - 2017-12-03
+ - Updated Tasks model to implement RESTful design
+
 ## [1.0.0] - 2017-11-30
  - derive from https://github.com/Rainbow-Sprinkles/starter-todo4 version 4.0.0
  - Add REST_Model to enable data operation via RESTful service
